@@ -1085,7 +1085,7 @@
     <version.plugin.maven.surefire>3.0.0-M7</version.plugin.maven.surefire>
     <version.plugin.mojo.build-helper>3.3.0</version.plugin.mojo.build-helper>
     <version.plugin.mojo.flatten>1.2.7</version.plugin.mojo.flatten>
-    <version.plugin.io.wcm.devops.eclipse>3.1.0</version.plugin.io.wcm.devops.eclipse>
+    <version.plugin.io.wcm.devops.eclipse>3.2.0</version.plugin.io.wcm.devops.eclipse>
     <version.plugin.eluder.coveralls>4.3.0</version.plugin.eluder.coveralls>
     <version.plugin.jacoco>0.8.8</version.plugin.jacoco>
 

@@ -1076,7 +1076,7 @@
     <version.plugin.maven.gpg>3.0.1</version.plugin.maven.gpg>
     <version.plugin.maven.install>3.1.0</version.plugin.maven.install>
     <version.plugin.maven.jar>3.3.0</version.plugin.maven.jar>
-    <version.plugin.maven.javadoc>3.4.1</version.plugin.maven.javadoc>
+    <version.plugin.maven.javadoc>3.5.0</version.plugin.maven.javadoc>
     <version.plugin.maven.jxr>3.3.0</version.plugin.maven.jxr>
     <version.plugin.maven.release>3.0.0-M7</version.plugin.maven.release>
     <version.plugin.maven.resources>3.3.0</version.plugin.maven.resources>

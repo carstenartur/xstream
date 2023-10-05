@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012, 2015, 2017, 2018, 2021, 2022 XStream Committers.
+ * Copyright (C) 2012, 2015, 2017, 2018, 2021, 2022, 2023 XStream Committers.
  * All rights reserved.
  *
  * The software in this package is published under the terms of the BSD
@@ -108,10 +108,15 @@ public class ConcurrentTypesTest extends AbstractAcceptanceTest {
 
     @SuppressWarnings("unchecked")
     public void testAtomicReferenceWithOldFormat() {
-        assertEquals(new AtomicReference<String>("test").get(), ((AtomicReference<String>)xstream.fromXML("" //
+        assertEquals(new AtomicReference<>("test").get(), ((AtomicReference<String>)xstream.fromXML("" //
             + "<java.util.concurrent.atomic.AtomicReference>\n" //
             + "  <value class='string'>test</value>\n" //
             + "</java.util.concurrent.atomic.AtomicReference>")).get());
+    }
+
+    public void testEmptyAtomicReference() {
+        final AtomicReference<?> atomicRef = new AtomicReference<>();
+        assertBothWays(atomicRef, "<atomic-reference/>");
     }
 
     public void testAtomicReferenceWithAlias() {

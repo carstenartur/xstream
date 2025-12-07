@@ -10,7 +10,7 @@
  */
 package com.thoughtworks.xstream.core.util;
 
-import javax.xml.bind.DatatypeConverter;
+import jakarta.xml.bind.DatatypeConverter;
 
 import com.thoughtworks.xstream.core.Base64Codec;
 import com.thoughtworks.xstream.core.StringCodec;

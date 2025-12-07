@@ -12,7 +12,7 @@ package com.thoughtworks.xstream.converters.extended;
 
 import java.awt.datatransfer.DataFlavor;
 
-import javax.activation.ActivationDataFlavor;
+import jakarta.activation.ActivationDataFlavor;
 
 import com.thoughtworks.acceptance.AbstractAcceptanceTest;
 import com.thoughtworks.xstream.XStream;
@@ -24,6 +24,7 @@ public class ActivationDataFlavorConverterTest extends AbstractAcceptanceTest {
     protected void setupSecurity(XStream xstream) {
         super.setupSecurity(xstream);
         xstream.allowTypeHierarchy(DataFlavor.class);
+        xstream.allowTypesByWildcard(new String[] {"jakarta.activation.*"});
     }
 
     public void testMimeTypeOnly() {

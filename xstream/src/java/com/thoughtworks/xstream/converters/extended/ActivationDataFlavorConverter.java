@@ -10,7 +10,7 @@
  */
 package com.thoughtworks.xstream.converters.extended;
 
-import javax.activation.ActivationDataFlavor;
+import jakarta.activation.ActivationDataFlavor;
 
 import com.thoughtworks.xstream.converters.ConversionException;
 import com.thoughtworks.xstream.converters.Converter;

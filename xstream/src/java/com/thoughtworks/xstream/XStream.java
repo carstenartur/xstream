@@ -867,7 +867,7 @@ public class XStream {
             alias("awt-text-attribute", JVM.loadClassForName("java.awt.font.TextAttribute"));
         }
 
-        final Class<?> type = JVM.loadClassForName("javax.activation.ActivationDataFlavor");
+        final Class<?> type = JVM.loadClassForName("jakarta.activation.ActivationDataFlavor");
         if (type != null) {
             alias("activation-data-flavor", type);
         }
@@ -1057,7 +1057,7 @@ public class XStream {
             registerConverterDynamically("com.thoughtworks.xstream.converters.extended.DurationConverter",
                 PRIORITY_NORMAL, null, null);
         }
-        if (JVM.loadClassForName("javax.activation.ActivationDataFlavor") != null) {
+        if (JVM.loadClassForName("jakarta.activation.ActivationDataFlavor") != null) {
             registerConverterDynamically("com.thoughtworks.xstream.converters.extended.ActivationDataFlavorConverter",
                 PRIORITY_NORMAL, null, null);
         }
